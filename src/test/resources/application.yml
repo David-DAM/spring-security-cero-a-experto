@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: spring-security-cero-a-experto
+  profiles:
+    active: test

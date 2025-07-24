@@ -1,0 +1,52 @@
+[
+  {
+    "specifications": "Cherry MX Red switches, 2.4GHz wireless connectivity, 1ms response time",
+    "warranty": "2 years limited manufacturer warranty",
+    "provider": "Corsair Gaming"
+  },
+  {
+    "specifications": "40mm drivers, 30-hour battery life, Bluetooth 5.0",
+    "warranty": "1 year limited warranty",
+    "provider": "Sony Electronics"
+  },
+  {
+    "specifications": "4K/30fps, autofocus, 90-degree field of view",
+    "warranty": "2 years warranty against defects",
+    "provider": "Logitech"
+  },
+  {
+    "specifications": "Weight capacity: 300lbs, adjustable height, lumbar support",
+    "warranty": "5 years on parts and materials",
+    "provider": "Herman Miller"
+  },
+  {
+    "specifications": "Height range 5.9 to 19.7, supports up to 33lbs",
+    "warranty": "3 years manufacturer warranty",
+    "provider": "VIVO"
+  },
+  {
+    "specifications": "11 ports, 100W power delivery, 4K@60Hz display",
+    "warranty": "18 months warranty",
+    "provider": "CalDigit"
+  },
+  {
+    "specifications": "15.6 inch IPS, 1920x1080, USB-C powered",
+    "warranty": "1 year limited warranty",
+    "provider": "ASUS"
+  },
+  {
+    "specifications": "12000 DPI, silent switches, 6 programmable buttons",
+    "warranty": "2 years hardware warranty",
+    "provider": "Logitech"
+  },
+  {
+    "specifications": "Adjustable color temperature 2700K-6500K, 5 brightness levels",
+    "warranty": "1 year warranty",
+    "provider": "BenQ"
+  },
+  {
+    "specifications": "48kHz/16bit, cardioid pattern, USB plug & play",
+    "warranty": "2 years limited warranty",
+    "provider": "Blue Microphones"
+  }
+]

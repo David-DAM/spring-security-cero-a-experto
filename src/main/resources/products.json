@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Wireless Mechanical Keyboard",
+    "description": "RGB-backlit wireless keyboard with mechanical switches",
+    "image": "1a2b3c4d-1234-5678-9101-abcdefabcdef-keyboard.jpg",
+    "price": 89.99
+  },
+  {
+    "name": "Noise Cancelling Headphones",
+    "description": "High-fidelity headphones with active noise cancellation",
+    "image": "2b3c4d5e-2345-6789-1011-bcdefabcdefa-headphones.jpg",
+    "price": 159.95
+  },
+  {
+    "name": "4K Webcam with Autofocus",
+    "description": "Ultra HD webcam ideal for streaming and video calls",
+    "image": "3c4d5e6f-3456-7890-1121-cdefabcdefab-webcam.jpg",
+    "price": 119.50
+  },
+  {
+    "name": "Ergonomic Office Chair",
+    "description": "Mesh back support and adjustable seat for long hours",
+    "image": "4d5e6f70-4567-8901-1222-defabcdefabc-chair.jpg",
+    "price": 229.00
+  },
+  {
+    "name": "Standing Desk Converter",
+    "description": "Transform any desk into a standing workstation",
+    "image": "5e6f7081-5678-9012-1323-efabcdefabcd-desk.jpg",
+    "price": 174.99
+  },
+  {
+    "name": "USB-C Docking Station",
+    "description": "Multi-port dock for laptops with HDMI, Ethernet and USB",
+    "image": "6f708192-6789-0123-1424-fabcdefabcde-dock.jpg",
+    "price": 79.90
+  },
+  {
+    "name": "1080p Portable Monitor",
+    "description": "Second screen for laptops and tablets via USB-C",
+    "image": "7g8192a3-7890-1234-1525-abcdefabcdef-monitor.jpg",
+    "price": 139.00
+  },
+  {
+    "name": "Silent Wireless Mouse",
+    "description": "Ergonomic mouse with silent clicks and Bluetooth",
+    "image": "8h92a3b4-8901-2345-1626-bcdefabcdefa-mouse.jpg",
+    "price": 24.99
+  },
+  {
+    "name": "Smart LED Desk Lamp",
+    "description": "Touch control lamp with brightness and temperature settings",
+    "image": "9i03b4c5-9012-3456-1727-cdefabcdefab-lamp.jpg",
+    "price": 39.99
+  },
+  {
+    "name": "USB Microphone",
+    "description": "Professional mic for podcasting and streaming",
+    "image": "0j14c5d6-0123-4567-1828-defabcdefabc-mic.jpg",
+    "price": 109.99
+  }
+]

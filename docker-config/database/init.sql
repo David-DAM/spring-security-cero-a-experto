@@ -1,0 +1,2 @@
+CREATE DATABASE spring;
+CREATE DATABASE spring_it;
