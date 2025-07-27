@@ -17,10 +17,8 @@ import java.util.function.Function;
 public class JwtService {
 
     private static final String SECRET_KEY = "404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970";
-    //    private static final long TOKEN_EXPIRATION = 1000 * 60 * 60 * 24;
+    private static final long TOKEN_EXPIRATION = 1000 * 60 * 60 * 24;
     private static final long REFRESH_WINDOW = 1000 * 60 * 60 * 24 * 7;
-    private static final long TOKEN_EXPIRATION = 1000;
-
 
     public String generateToken(UserDetails userDetails) {
         Map<String, Object> claims = Map.of("authorities", userDetails.getAuthorities()
