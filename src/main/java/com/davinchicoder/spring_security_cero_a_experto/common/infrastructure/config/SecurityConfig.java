@@ -30,7 +30,11 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/api/v1/products/**",
                                 "/api/v1/users/login",
-                                "/api/v1/users/register"
+                                "/api/v1/users/register",
+                                "/v3/api-docs/**",
+                                "/swagger-ui/**",
+                                "/swagger-ui.html",
+                                "/proxy/**"
                         ).permitAll()
                         .requestMatchers("/actuator/**").hasAuthority("ADMIN")
                         .anyRequest().authenticated()
