@@ -27,17 +27,17 @@ public class SecurityConfig {
         return http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(
-                                "/api/v1/products/**",
-                                "/api/v1/users/login",
-                                "/api/v1/users/register",
-                                "/v3/api-docs/**",
-                                "/swagger-ui/**",
-                                "/swagger-ui.html",
-                                "/proxy/**"
-                        ).permitAll()
-                        .requestMatchers("/actuator/**").hasAuthority("ADMIN")
-                        .anyRequest().authenticated()
+                                .requestMatchers(
+//                                "/api/v1/products/**",
+                                        "/api/v1/users/login",
+                                        "/api/v1/users/register",
+                                        "/v3/api-docs/**",
+                                        "/swagger-ui/**",
+                                        "/swagger-ui.html",
+                                        "/proxy/**"
+                                ).permitAll()
+                                .requestMatchers("/actuator/**").hasAuthority("ADMIN")
+                                .anyRequest().authenticated()
                 )
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authenticationProvider(authenticationProvider)
