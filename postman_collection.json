@@ -1,199 +1,330 @@
 {
 	"info": {
-		"_postman_id": "05dfefd6-faf0-4df9-b66c-8da789e7398b",
-		"name": "Spring Boot Data JPA de Cero a Experto",
+		"_postman_id": "9e8ec990-baa9-4428-bec7-c36741a11a11",
+		"name": "Spring Security de Cero a Experto",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "23080126"
 	},
 	"item": [
 		{
-			"name": "Get all products",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{BASE_URL}}/products?pageSize=5&pageNumber=0&sortBy=id&direction=asc&name=&description=&priceMin=0&priceMax=999",
-					"host": [
-						"{{BASE_URL}}"
-					],
-					"path": [
-						"products"
-					],
-					"query": [
-						{
-							"key": "pageSize",
-							"value": "5"
-						},
-						{
-							"key": "pageNumber",
-							"value": "0"
-						},
-						{
-							"key": "sortBy",
-							"value": "id"
-						},
-						{
-							"key": "direction",
-							"value": "asc"
-						},
-						{
-							"key": "name",
-							"value": ""
-						},
-						{
-							"key": "description",
-							"value": ""
-						},
-						{
-							"key": "priceMin",
-							"value": "0"
-						},
-						{
-							"key": "priceMax",
-							"value": "999"
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get all products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/products?pageSize=5&pageNumber=0&sortBy=id&direction=asc&name=&description=&priceMin=0&priceMax=999",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "pageSize",
+									"value": "5"
+								},
+								{
+									"key": "pageNumber",
+									"value": "0"
+								},
+								{
+									"key": "sortBy",
+									"value": "id"
+								},
+								{
+									"key": "direction",
+									"value": "asc"
+								},
+								{
+									"key": "name",
+									"value": ""
+								},
+								{
+									"key": "description",
+									"value": ""
+								},
+								{
+									"key": "priceMin",
+									"value": "0"
+								},
+								{
+									"key": "priceMax",
+									"value": "999"
+								}
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Actuator",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/actuator/health",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"actuator",
-						"health"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Save product",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Product 1",
-							"type": "text"
-						},
-						{
-							"key": "description",
-							"value": "Description 1",
-							"type": "text"
-						},
-						{
-							"key": "price",
-							"value": "150.00",
-							"type": "text"
-						},
-						{
-							"key": "file",
-							"type": "file",
-							"src": "/C:/Users/david/Downloads/fondo.jpg"
-						}
-					]
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "{{BASE_URL}}/products",
-					"host": [
-						"{{BASE_URL}}"
-					],
-					"path": [
-						"products"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update product",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": 8,\r\n    \"name\": \"Noise Cancelling Headphones\",\r\n    \"description\": \"High-fidelity headphones with active noise cancellation\",\r\n    \"price\": 159.95,\r\n    \"provider\": \"Samsung\",\r\n    \"review\": {\r\n        \"comment\": \"Not Fail\",\r\n        \"score\": 5\r\n    },\r\n    \"categoryId\": 5\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "Save product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Product 1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Description 1",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "150.00",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/david/Downloads/fondo.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/products",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "{{BASE_URL}}/products",
-					"host": [
-						"{{BASE_URL}}"
-					],
-					"path": [
-						"products"
-					]
+				{
+					"name": "Update product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 8,\r\n    \"name\": \"Noise Cancelling Headphones\",\r\n    \"description\": \"High-fidelity headphones with active noise cancellation\",\r\n    \"price\": 159.95,\r\n    \"provider\": \"Samsung\",\r\n    \"review\": {\r\n        \"comment\": \"Not Fail\",\r\n        \"score\": 5\r\n    },\r\n    \"categoryId\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/products",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get product by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/products/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete product by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/products/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Get product by id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{BASE_URL}}/products/:id",
-					"host": [
-						"{{BASE_URL}}"
-					],
-					"path": [
-						"products",
-						":id"
-					],
-					"variable": [
-						{
-							"key": "id",
-							"value": "8"
+			"name": "Metrics",
+			"item": [
+				{
+					"name": "Actuator",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"health"
+							]
 						}
-					]
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Delete product by id",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "{{BASE_URL}}/products/:id",
-					"host": [
-						"{{BASE_URL}}"
-					],
-					"path": [
-						"products",
-						":id"
-					],
-					"variable": [
+			"name": "User",
+			"item": [
+				{
+					"name": "Login User",
+					"event": [
 						{
-							"key": "id",
-							"value": "1"
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Authentication correctly\", function () {\r",
+									"\r",
+									"    let body = pm.response.json();\r",
+									"\r",
+									"    pm.expect(body.token).to.not.be.empty;\r",
+									"});\r",
+									"\r",
+									"if(pm.response.json().token){\r",
+									"\r",
+									"    pm.collectionVariables.set(\"TOKEN\", pm.response.json().token);\r",
+									"\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
 						}
-					]
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"pepe@gmail.com\",\r\n    \"password\": \"pepito1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/users/login",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Authentication correctly\", function () {\r",
+									"\r",
+									"    let body = pm.response.json();\r",
+									"\r",
+									"    pm.expect(body.token).to.not.be.empty;\r",
+									"});\r",
+									"\r",
+									"if(pm.response.json().token){\r",
+									"\r",
+									"    pm.collectionVariables.set(\"TOKEN\", pm.response.json().token);\r",
+									"\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"pepe@gmail.com\",\r\n    \"password\": \"pepito1234\",\r\n    \"firstName\": \"pepe\",\r\n    \"lastName\": \"lopez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/users/register",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{TOKEN}}",
+				"type": "string"
+			}
+		]
+	},
 	"event": [
 		{
 			"listen": "prerequest",
@@ -220,6 +351,11 @@
 		{
 			"key": "BASE_URL",
 			"value": "http://localhost:8080/api/v1",
+			"type": "string"
+		},
+		{
+			"key": "TOKEN",
+			"value": "eyJhbGciOiJIUzI1NiJ9.eyJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwic3ViIjoidXNlciIsImlhdCI6MTc1MzQ0MDczNCwiZXhwIjoxNzUzNDQwNzM1fQ.31KzKR_cNnStt4rp4c6ulyL3-LOT_xZveY8u6AXVBz8",
 			"type": "string"
 		}
 	]
